@@ -1,0 +1,28 @@
+{
+  "name": "next-chakra-form",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.10",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
+    "@unform/core": "^2.1.6",
+    "@unform/web": "^2.1.6",
+    "framer-motion": "4",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.1.0",
+    "eslint-config-next": "11.1.2"
+  }
+}
