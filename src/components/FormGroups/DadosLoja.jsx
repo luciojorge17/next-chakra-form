@@ -4,6 +4,7 @@ import Input from '../Form/Input'
 import { Subtitle } from '../Subtitle'
 
 export function DadosLoja() {
+
     return (
         <Box>
             <Subtitle text="Dados da Loja" icon={IoStorefrontOutline} />
@@ -11,8 +12,9 @@ export function DadosLoja() {
                 <Input
                     label="CNPJ"
                     name="cnpj"
+                    inputMode="decimal"
+                    mask="99.999.999/9999-99"
                     isRequired
-                    placeholder="00.000.000/0000-00"
                 />
                 <Input
                     label="Razão Social"

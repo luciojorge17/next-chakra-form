@@ -10,6 +10,9 @@ export const theme = extendTheme({
             body: {
                 bg: 'gray.700',
                 color: 'gray.50'
+            },
+            option: {
+                color: 'gray.700'
             }
         }
     }
