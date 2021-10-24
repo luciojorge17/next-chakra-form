@@ -18,18 +18,18 @@ export function DadosLoja() {
                 />
                 <Input
                     label="Razão Social"
-                    name="razao-social"
+                    name="razaoSocial"
                     isRequired
                 />
                 <Input
                     label="Nome Fantasia"
-                    name="nome-fantasia"
+                    name="nomeFantasia"
                     isRequired
                 />
                 <Input
                     label="E-mail"
                     name="email"
-                    type="email"
+                    inputMode="email"
                     isRequired
                 />
             </Stack>

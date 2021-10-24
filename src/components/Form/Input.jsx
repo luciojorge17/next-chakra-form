@@ -1,4 +1,4 @@
-import { Input as ChakraInput, FormControl, FormLabel, FormHelperText } from '@chakra-ui/react'
+import { Input as ChakraInput, FormControl, FormLabel, FormHelperText, Text } from '@chakra-ui/react'
 import { useField } from '@unform/core'
 import { useEffect, useRef } from 'react';
 import InputMask from 'react-input-mask';
@@ -19,9 +19,8 @@ export default function Input({ label, name, mask = false, isRequired = false, .
     return (
         <FormControl
             id={name}
-            isRequired={isRequired}
         >
-            <FormLabel fontSize="sm">{label}</FormLabel>
+            <FormLabel fontSize="sm">{label} {isRequired && <Text as="span" color="red.400">*</Text>}</FormLabel>
 
             {!mask ? (
                 <ChakraInput
@@ -35,7 +34,6 @@ export default function Input({ label, name, mask = false, isRequired = false, .
                 <ChakraInput
                     as={InputMask}
                     mask={mask}
-                    maskPlaceholder={null}
                     ref={inputRef}
                     isInvalid={error}
                     errorBorderColor="red.400"
@@ -45,7 +43,7 @@ export default function Input({ label, name, mask = false, isRequired = false, .
             )}
 
 
-            {name == 'email-usuario' && <FormHelperText color="blue.300">As credenciais para acessar o app PJ serão enviadas para este e-mail</FormHelperText>}
+            {name == 'emailUsuario' && <FormHelperText color="blue.300">As credenciais para acessar o app PJ serão enviadas para este e-mail</FormHelperText>}
 
 
             {error && <FormHelperText color="red.400">{error}</FormHelperText>}

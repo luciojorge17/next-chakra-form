@@ -10,18 +10,18 @@ export function Usuario() {
             <Stack mt="4" spacing="6">
                 <Input
                     label="Nome"
-                    name="nome-usuario"
+                    name="nomeUsuario"
                     isRequired
                 />
                 <Input
                     label="E-mail"
-                    name="email-usuario"
-                    type="email"
+                    name="emailUsuario"
+                    inputMode="email"
                     isRequired
                 />
                 <Input
                     label="Celular"
-                    name="celular-usuario"
+                    name="celularUsuario"
                     inputMode="decimal"
                     mask="(99) 99999-9999"
                     isRequired
