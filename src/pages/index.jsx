@@ -28,11 +28,11 @@ export default function Home() {
 
         try {
             const schema = Yup.object().shape({
-                cnpj: Yup.string().min(18, 'Digite um CNPJ válido').required('Campo obrigatório'),
+                cnpj: Yup.string().min(14, 'Digite um CNPJ válido').required('Campo obrigatório'),
                 razaoSocial: Yup.string().required('Campo obrigatório'),
                 nomeFantasia: Yup.string().required('Campo obrigatório'),
                 email: Yup.string().email('Digite um e-mail válido').required('Campo obrigatório'),
-                cep: Yup.string().min(9, 'Digite um CEP válido').required('Campo obrigatório'),
+                cep: Yup.string().min(8, 'Digite um CEP válido').required('Campo obrigatório'),
                 uf: Yup.string().required('Campo obrigatório'),
                 cidade: Yup.string().required('Campo obrigatório'),
                 bairro: Yup.string().required('Campo obrigatório'),
@@ -40,7 +40,7 @@ export default function Home() {
                 numero: Yup.string().required('Campo obrigatório'),
                 nomeUsuario: Yup.string().required('Campo obrigatório'),
                 emailUsuario: Yup.string().email('Digite um e-mail válido').required('Campo obrigatório'),
-                celularUsuario: Yup.string().min(15, 'Digite um celular válido').required('Campo obrigatório')
+                celularUsuario: Yup.string().min(11, 'Digite um celular válido').required('Campo obrigatório')
             });
 
             await schema.validate(data, {
